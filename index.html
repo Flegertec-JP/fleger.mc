@@ -15,8 +15,15 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        @font-face {
+        font-family: "minecraft"; /*任意のフォントファミリー名でOK*/
+        src: url("minecraft.otf") format("opentype"); /*fontがあるパスを書いて、formatを指定*/
+        font-display: swap;
+        }
+        
         /* CSS */
         html, body {
+            font-family: "minecraft",sans-serif; /*上で設定したフォントファミリー名*/
             margin: 0;
             padding: 0;
             height: 100%;
