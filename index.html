@@ -18,21 +18,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @charset "utf-8";
-
+        
         @font-face {
         font-family: 'Product Sans';
         src: url('https://sk0528jp.github.io/data/font/product-sans.ttf') format('truetype');
+        unicode-range: U+0020-007F; /* 基本的な英数字 */
+        }
+
+        @font-face {
+        font-family: 'Noto Sans JP';
+        src: url('https://fonts.gstatic.com/s/notosansjp/v30/-F63fjptAgt5VM-kVkqdyU8p7A8GLezON6xNWQ.ttf') format('truetype');
+        unicode-range: U+3000-30FF, U+4E00-9FFF; /* 平仮名・カタカナ・漢字 */
         }
 
         /* CSS */
         html, body {
-        font-family: 'Product Sans', sans-serif;
+        font-family: 'Product Sans', 'Noto Sans JP', sans-serif;
         margin: 0;
         padding: 0;
         height: 100%;
         background-color: #2a2a2a;
         color: #eaeaea;
         }
+
 
         }
         body {
